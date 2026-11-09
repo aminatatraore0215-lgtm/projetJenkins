@@ -1,4 +1,3 @@
-@@ -0,0 +1,39 @@
 pipeline {
   agent any
   options { timestamps() }
@@ -34,7 +33,8 @@ pipeline {
     }
   }
   post {
-    success { echo 'Build OK' }
-    failure { echo 'Build KO' }
+    success {
+      echo 'Build OK'
+    }
   }
 }
